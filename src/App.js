@@ -1,17 +1,29 @@
 import React, { useReducer, useRef } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
 import SideBar from "./components/SideBar";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <Router>
       <div>
         <NavTabs />
-        <main class="container">
-          <div class="row">
-            <div class="col-md-4">
+        <main className="container">
+          <div className="row">
+            <div className="col-md-4">
               <SideBar />
+            </div>
+            <div className="col-md-8 searchProjectPanel">
+              <main className="row">
+                <div className="col-md-6">
+                  <Switch>
+                    <Route exact path = "/contact">
+                      <Contact />
+                    </Route>
+                  </Switch>
+                </div>
+              </main>
             </div>
           </div>
         </main>
