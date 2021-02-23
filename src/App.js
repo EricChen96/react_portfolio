@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
 import SideBar from "./components/SideBar";
 import Contact from "./pages/Contact";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
                   <Switch>
                     <Route exact path = "/contact">
                       <Contact />
+                    </Route>
+                    <Route exact path = {["/","/about"]}>
+                      <AboutMe />
                     </Route>
                   </Switch>
                 </div>
