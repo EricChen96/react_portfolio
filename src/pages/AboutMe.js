@@ -24,16 +24,8 @@ function AboutMe() {
                     <a href="https://github.com/EricChen96">Visit My Github</a> <br />
                     <a href="https://linkedin.com/in/eric-chen-48724b110">Visit My LinkedIn</a>
                     <br />
-
-                    <p className="profileParagraph">
-                        My other hobbies include:
-                        </p>
-                    <ul className="profileParagraph">
-                        <li>watching and playing basketball</li>
-                        <li>playing videogames</li>
-                        <li>cooking</li>
-                        <li>hiking</li>
-                    </ul>
+                    <div>Email: ericchen201896@gmail.com</div>
+                    <div>Phone: 858-302-8429</div>
 
                 </section>
             </section>

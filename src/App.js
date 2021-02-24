@@ -4,6 +4,7 @@ import NavTabs from "./components/NavTabs";
 import SideBar from "./components/SideBar";
 import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
                     </Route>
                     <Route exact path = {["/","/about"]}>
                       <AboutMe />
+                    </Route>
+                    <Route exact path = "/projects">
+                      <Projects />
                     </Route>
                   </Switch>
                 </div>

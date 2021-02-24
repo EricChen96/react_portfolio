@@ -29,11 +29,7 @@ function SideBar() {
                     {/* <a className="btn btn-primary col-12 mx-auto mt-2" href="./searchProjectScreen.html">
                         Search Bar
                     </a> */}
-                    <Link to="/search" className="btn btn-primary col-12 mx-auto mt-2">Search Bar</Link>
-                    <div className="div">
-                        Most Recent Searches:
-                    </div>
-
+                    <Link to="/projects" className="btn btn-primary col-12 mx-auto mt-2">Projects</Link>
                     <div className="recentSearchesButtonsList">
                         {/* <!-- <a className="btn btn-primary col-12 mx-auto mt-2"
                             href="https://anzelcapparelli.github.io/marvelHeroFinder/">
