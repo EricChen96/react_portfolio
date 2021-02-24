@@ -43,13 +43,14 @@ const projectList = [
     }
 ];
 
+
 function Projects() {
     return (
         <div>
             {projectList.map((project) => (
                 <div>
                     <div>Title: {project.title}</div>
-                    <img src={process.env.PUBLIC_URL + project.image} alt={project.title}/>
+                    <img src={process.env.PUBLIC_URL + project.image} alt={project.title} style={{width: "400px", height: "200px"}}/>
                     <div>{project.description}</div>
                     <a href={project.github}>{project.github}</a> 
                     <br></br>
