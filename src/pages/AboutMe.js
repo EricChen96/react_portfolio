@@ -1,22 +1,21 @@
 import WelcomeBanner from "../components/WelcomeBanner";
-
-
+import AboutMeIconsPopup from "../components/AboutMeIconsPopup";
+import { Animated } from "react-animated-css";
 
 function AboutMe() {
     return (
         <div>
             <section className="row">
                 <div className="col-md-12">
-                    <WelcomeBanner />
-                    <divv className="box">
-                        <img src={process.env.PUBLIC_URL + "/images/Profile_Picture.png"} className="profile-picture" alt="Profile Picture" />
-                    </divv>
+                    <div>
+                        <WelcomeBanner />
 
-                    <a href="https://github.com/EricChen96">Visit My Github</a> <br />
-                    <a href="https://linkedin.com/in/eric-chen-48724b110">Visit My LinkedIn</a>
-                    <br />
-                    <div>Email: ericchen201896@gmail.com</div>
-                    <div>Phone: 858-302-8429</div>
+                    </div>
+
+                    <Animated animationInDelay={4000} animationIn="fadeIn" isVisible={true}>
+
+                        <AboutMeIconsPopup />
+                    </Animated>
 
                 </div>
             </section>

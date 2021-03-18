@@ -1,25 +1,25 @@
 import React, { useReducer, useRef } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import NavTabs from "./components/NavTabs";
 import SideBar from "./components/SideBar";
-import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 
 const projectList = [
   {
     title: "Lyrical Artistry",
-    description: "Search up your favorite quotes to append to an image. Then store the image in your personal profile and share with your friends.",
+    description: "Lyrical Artistry is a group project between me and three other friends. Lyrical Artistry allows users to search up their favorite quotes and append it to an image. Furthermore, they can edit the image by adding more pictures or texts, and drawing. The user can also save the image to their portfolio and then share it with friends.",
     link: "https://lyrical-artistry.herokuapp.com/searchLyrics",
     github: "https://github.com/bcraig-13/lyrical-artistry",
-    image: "/images/lyrical_industry_screenshot.png"
+    image: "/images/lyrical_industry_screenshot.png",
+    technologies: "Javascript, MongoDB, React, AWS S3, Axios, KanvasConva, MusixMatch API, HTML, CSS"
   },
   {
     title: "Marvel Hero Finder",
-    description: "A site for the Marvel Comic fanbase. Here, you can search up your favorite Marvel characters for their character biography!",
+    description: "Marvel Hero Finder is a site perfect for comic fans. Users can search up their favorite Marvel characters from the comics and pull up information on the characters such as their biographies, stats, and images",
     link: "https://anzelcapparelli.github.io/marvelHeroFinder/",
     github: "https://github.com/anzelcapparelli/marvelHeroFinder",
-    image: "/images/marvel_screenshot.png"
+    image: "/images/marvel_screenshot.png",
+    technologies: "Javascript, MySQL, JQuery, chartJS, HTML, CSS, Marvel API, Superhero API, GIPHY API"
   },
   {
     title: "Weather Dashboard",
@@ -70,9 +70,6 @@ function App() {
             <div className="col-md-8 searchProjectPanel">
               <main className="row">
                 <Switch>
-                  <Route exact path="/contact">
-                    <Contact />
-                  </Route>
                   <Route exact path={["/", "/about"]}>
                     <AboutMe />
                   </Route>

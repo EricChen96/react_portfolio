@@ -9,26 +9,16 @@ function SideBar(props) {
                     width: "50px"
                 }} alt="home" />
             </Link>
-            <Link to="/contact" className="btn btn-primary col-12 mx-auto mt-2">
-                <img src={process.env.PUBLIC_URL + "/logos/contact.png"} style={{
-                    objectFit: "contain",
-                    width: "50px"
-                }} alt="home" />
-            </Link>
             <Link to="/projects" className="btn btn-primary col-12 mx-auto mt-2">
                 <img src={process.env.PUBLIC_URL + "/logos/code.png"} style={{
                     objectFit: "contain",
                     width: "50px"
-                }} alt="home" />
+                }} alt="projects" />
             </Link>
-            <a className="btn btn-primary col-12 mx-auto mt-2" href={process.env.PUBLIC_URL + "/resume.pdf"} download>            <Link to="/contact" className="btn btn-primary col-12 mx-auto mt-2">
-                <img src={process.env.PUBLIC_URL + "/logos/resume.png"} style={{
-                    objectFit: "contain",
-                    width: "50px"
-                }} alt="home" />
-            </Link></a>
+            <a className="btn btn-primary col-12 mx-auto mt-2" href={process.env.PUBLIC_URL + "/resume.pdf"} download>
+                Resume
+            </a>
         </div>
-
     )
 }
 
