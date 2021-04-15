@@ -9,11 +9,8 @@ function AboutMe() {
                 <div className="col-md-12">
                     <div>
                         <WelcomeBanner />
-
                     </div>
-
                     <Animated animationInDelay={4000} animationIn="fadeIn" isVisible={true}>
-
                         <AboutMeIconsPopup />
                     </Animated>
 

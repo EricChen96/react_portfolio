@@ -1,5 +1,5 @@
 import React, { useReducer, useRef } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
@@ -70,12 +70,14 @@ function App() {
             <div className="col-md-8 searchProjectPanel">
               <main className="row">
                 <Switch>
-                  <Route path={["/","/about"]}>
-                    <AboutMe />
-                  </Route>
+
                   <Route path="/projects">
                     <Projects projectList={projectList} />
                   </Route>
+                  <Route path={["/about", "/"]}>
+                    <AboutMe />
+                  </Route>
+
                 </Switch>
               </main>
             </div>
