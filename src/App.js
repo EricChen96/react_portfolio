@@ -70,14 +70,12 @@ function App() {
             <div className="col-md-8 searchProjectPanel">
               <main className="row">
                 <Switch>
-
                   <Route path="/projects">
                     <Projects projectList={projectList} />
                   </Route>
                   <Route path={["/about", "/"]}>
                     <AboutMe />
                   </Route>
-
                 </Switch>
               </main>
             </div>
