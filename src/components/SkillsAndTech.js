@@ -24,15 +24,15 @@ function SkillsAndTech(props) {
             <h3>
                 Using these, I have coded the following projects:
             </h3>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <div className="btn-group btn-group-toggle" data-toggle="buttons">
                 {props.projects.map((project) => (
-                    <label class="btn btn-secondary ">
-                        <input type="radio" name={project.title} id={project.title} autocomplete="off" onClick={() => handleProjectSelect(project)} /> {project.title}
+                    <label className="btn btn-secondary" key={project.title}>
+                        <input type="radio" name={project.title} id={project.title}  onClick={() => handleProjectSelect(project)} /> {project.title}
                     </label>
                 ))}
             </div>
 
-            {project !== null &&
+            {project !== undefined &&
                 <div className="card mt-3">
                     <div className="card-header">{project.title}</div>
                     <img src={process.env.PUBLIC_URL + project.image} className="card-img" alt={project.title} />
