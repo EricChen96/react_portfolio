@@ -36,7 +36,7 @@ const projectList = [
     },
     {
       title: "Mean Game",
-      description: "Take over the world in a mean quote typing game",
+      description: "Take over the world in a mean quote typing game.",
       link: "https://ucsdprojecttwo.herokuapp.com/",
       github: "https://github.com/TechKoSpeaks/MeanGame",
       image: "/images/meanest_game_screenshot.png",

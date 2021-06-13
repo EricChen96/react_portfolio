@@ -15,6 +15,12 @@ function SideBar(props) {
                     width: "50px"
                 }} alt="projects" />
             </Link>
+            <Link to="/contact" className="btn btn-primary col-12 mx-auto mt-2">
+                <img src={process.env.PUBLIC_URL + "/logos/call.png"} style={{
+                    objectFit: "contain",
+                    width: "45px"
+                }} alt="contact" />
+            </Link>
             <a className="btn btn-primary col-12 mx-auto mt-2" href={process.env.PUBLIC_URL + "/resume.pdf"} download>
                 Resume
             </a>
