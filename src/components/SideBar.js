@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function SideBar(props) {
     return (
-        <div>
+        <div style ={{backgroundColor:"purple", height: "100vh"}}>
             <Link to="/about" className="btn btn-primary col-12 mx-auto mt-2">
                 <img src={process.env.PUBLIC_URL + "/logos/home.png"} style={{
                     objectFit: "contain",
