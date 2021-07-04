@@ -13,10 +13,8 @@ function AboutMe() {
                     <Animated animationInDelay={4000} animationIn="fadeIn" isVisible={true}>
                         <AboutMeIconsPopup />
                     </Animated>
-
                 </div>
             </section>
-
         </div>
     )
 }

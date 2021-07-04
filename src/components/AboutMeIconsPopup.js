@@ -2,8 +2,8 @@ function AboutMeIconsPopup() {
 
     return (
         <div className="row">
-            <div className="col-md-6">
-                <img src={process.env.PUBLIC_URL + "/images/Profile_Picture.png"} style={{ borderRadius: "50%", display: "block", marginLeft: "0", marginRight: "auto" }} className="profile-picture" alt="ProfilePicture" />
+            <div className="col-md-6" style={{minWidth: "300px"}}>
+                <img src={process.env.PUBLIC_URL + "/images/Profile_Picture.png"} style={{ borderRadius: "50%", display: "block",  marginRight: "auto", width: "100%", height: "auto"}} className="profile-picture" alt="ProfilePicture" />
             </div>
             <div className="col-md-6">
                 <div style={{ display: "flex", alignItems: "center" }}>

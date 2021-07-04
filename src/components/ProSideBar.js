@@ -1,22 +1,22 @@
-import { ProSidebar, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
+import { ProSidebar, SidebarHeader, SidebarFooter, SidebarContent, MenuItem } from 'react-pro-sidebar';
 import { Link } from "react-router-dom";
+import { BsFillHouseFill, BsCodeSlash } from "react-icons/bs";
 
 function SecondSideBar(props) {
     return (
 
         <ProSidebar>
             <SidebarHeader>
-                {/**
-     *  You can add a header for the sidebar ex: logo
-     */}
             </SidebarHeader>
             <SidebarContent>
-                <Link to="/about" className="btn btn-primary col-12 mx-auto mt-2">
-                    <img src={process.env.PUBLIC_URL + "/logos/home.png"} style={{
-                        objectFit: "contain",
-                        width: "50px"
-                    }} alt="home" />
-                </Link>
+                <MenuItem icon={<BsFillHouseFill />}>
+                    <Link to="/about" >
+                    </Link>
+                </MenuItem>
+                <MenuItem icon={<BsCodeSlash />}>
+                    <Link to="/projects" >
+                    </Link>
+                </MenuItem>
             </SidebarContent>
             <SidebarFooter>
                 {/**
