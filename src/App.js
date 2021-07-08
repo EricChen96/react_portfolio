@@ -14,8 +14,8 @@ function App() {
         <main className="container" style={{marginLeft: "0", paddingLeft: "0"}}>
           <div className="row">
             <div className="col-md-4">
-              {/* <ProSideBar></ProSideBar> */}
-              <SideBar />
+              <ProSideBar></ProSideBar>
+              {/* <SideBar /> */}
             </div>
             <div className="col-md-8 searchProjectPanel">
               <div style={{ marginTop: "5%" }}></div>
