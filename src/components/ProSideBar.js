@@ -6,9 +6,8 @@ import 'react-pro-sidebar/dist/css/styles.css';
 function SecondSideBar(props) {
     return (
 
-        <ProSidebar>
+        <ProSidebar style={{height: "100vh"}}>
             <Menu iconShape="square">
-
                 <MenuItem>
                     <Link to="/about" >
                         About
