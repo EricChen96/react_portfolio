@@ -6,12 +6,12 @@ import 'react-pro-sidebar/dist/css/styles.css';
 function SecondSideBar(props) {
     return (
 
-        <ProSidebar style={{height: "100vh"}}>
+        <ProSidebar style={{ height: "100vh" }}>
             <Menu iconShape="square">
-                <MenuItem>
+                <MenuItem style={{display: "flex", alignItems:"center"}}>
                     <Link to="/about" >
-                        About
-                        <BsFillHouseFill />
+                        <BsFillHouseFill style={{ fontSize: "30px" }} />
+                        <div>About </div>
                     </Link>
                 </MenuItem>
                 <MenuItem >

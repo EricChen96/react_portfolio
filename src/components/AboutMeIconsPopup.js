@@ -5,7 +5,7 @@ function AboutMeIconsPopup() {
             <div className="col-md-6" style={{ minWidth: "300px" }}>
                 <img src={process.env.PUBLIC_URL + "/images/Profile_Picture.png"} style={{ borderRadius: "50%", display: "block", marginRight: "auto", width: "100%", height: "auto" }} className="profile-picture" alt="ProfilePicture" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" style={{ marginTop: "5%" }}>
                 <div style={{ display: "flex", alignItems: "center" }}>
                     <a href="https://github.com/EricChen96" >
                         <img src={process.env.PUBLIC_URL + "/logos/githubIcon.png"} style={{ marginTop: "20px", width: "50px", height: "50px" }} className="github" alt="github" />
