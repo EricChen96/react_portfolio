@@ -8,7 +8,7 @@ function SecondSideBar(props) {
 
         <ProSidebar style={{ height: "100vh" }}>
             <Menu iconShape="square">
-                <MenuItem style={{display: "flex", alignItems:"center"}}>
+                <MenuItem style={{ display: "flex", alignItems: "center" }}>
                     <Link to="/about" >
                         <BsFillHouseFill style={{ fontSize: "30px" }} />
                         <div>About </div>

@@ -10,8 +10,8 @@ import ProSideBar from './components/ProSideBar';
 function App() {
   return (
     <Router>
-      <div style={{backgroundColor: "#F0EAD6"}}>
-        <main className="container" style={{marginLeft: "0", paddingLeft: "0"}}>
+      <div style={{ backgroundColor: "#F0EAD6" }}>
+        <main className="container" style={{ marginLeft: "0", paddingLeft: "0" }}>
           <div className="row">
             <div className="col-md-4">
               <ProSideBar></ProSideBar>
